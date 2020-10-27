@@ -19,14 +19,11 @@ class CoverFlowViewController: UIViewController {
 
     private var imagesNames: [String] = []
     private var centerImageID = 0
-    private var isOrientationCahnged = false
-    
     
     // MARK: - Ovveride Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         imagesNames = ImageManager.shared.getImagesName()
-        prepeareCoverLayersSize()
         addingCoversToView(from: imagesNames)
     }
     
@@ -40,16 +37,10 @@ class CoverFlowViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        if isOrientationCahnged {
-            prepeareCoverLayersSize()
-            changeCoverLayersSize()
-            isOrientationCahnged = false
-        }
+        prepeareCoverLayersSize()
+        changeCoverLayersSize()
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        isOrientationCahnged = true
-    }
     //MARK: - ID Actions
     
     //MARK: - Private Methods
@@ -257,22 +248,30 @@ class CoverFlowViewController: UIViewController {
     }
     
     private func prepeareCoverLayersSize() {
-        
-        let coverSideSize: CGFloat = (view.frame.width / 3)
+        var coverSideSize = CGFloat()
+        var xLayerLeftPosition = CGFloat()
+    
+        if UIDevice.current.orientation.isLandscape && UIDevice.current.userInterfaceIdiom != .pad {
+            coverSideSize = (view.frame.height / 2)
+             xLayerLeftPosition = view.center.x  - coverSideSize - coverSideSize / 2
+        } else {
+            coverSideSize = (view.frame.width / 3)
+            xLayerLeftPosition = 0
+        }
         
         leftOutsideLayerFrame = CGRect(x: -coverSideSize,
                                        y: view.center.y - coverSideSize / 2,
                                        width: coverSideSize,
                                        height: coverSideSize)
-        leftLayerFrame = CGRect(x: 0,
+        leftLayerFrame = CGRect(x: xLayerLeftPosition,
                                 y: view.center.y - coverSideSize / 2,
                                 width: coverSideSize,
                                 height: coverSideSize)
-        centerLayerFrame = CGRect(x: coverSideSize - coverSideSize / 4,
+        centerLayerFrame = CGRect(x: xLayerLeftPosition + coverSideSize * 1.5 / 2,
                                   y: view.center.y - coverSideSize * 1.5 / 2,
                                   width: coverSideSize * 1.5,
                                   height: coverSideSize * 1.5)
-        rightLayerFrame = CGRect(x: coverSideSize * 2,
+        rightLayerFrame = CGRect(x: view.center.x + coverSideSize / 2,
                                  y: view.center.y - coverSideSize / 2,
                                  width: coverSideSize,
                                  height: coverSideSize)
