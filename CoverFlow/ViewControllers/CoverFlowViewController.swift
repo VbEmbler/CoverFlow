@@ -19,13 +19,15 @@ class CoverFlowViewController: UIViewController {
 
     private var imagesNames: [String] = []
     private var centerImageID = 0
+    private var isOrientationCahnged = false
+    
     
     // MARK: - Ovveride Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         imagesNames = ImageManager.shared.getImagesName()
-        prepeareImagesSize()
-        addingImagesToView(from: imagesNames)
+        prepeareCoverLayersSize()
+        addingCoversToView(from: imagesNames)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -37,8 +39,41 @@ class CoverFlowViewController: UIViewController {
         }
     }
     
+    override func viewDidLayoutSubviews() {
+        if isOrientationCahnged {
+            prepeareCoverLayersSize()
+            changeCoverLayersSize()
+            isOrientationCahnged = false
+        }
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        isOrientationCahnged = true
+    }
+    //MARK: - ID Actions
+    
     //MARK: - Private Methods
-    private func addingImagesToView(from images: [String]) {
+    private func changeCoverLayersSize() {
+        guard let layers = view.layer.sublayers else { return }
+        for layer in layers {
+            switch layer.name {
+            case PositionLayerName.leftOutsideLayer.rawValue:
+                layer.frame = leftOutsideLayerFrame
+            case PositionLayerName.leftLayer.rawValue:
+                layer.frame = leftLayerFrame
+            case PositionLayerName.centerLayer.rawValue:
+                layer.frame = centerLayerFrame
+            case PositionLayerName.rightLayer.rawValue:
+                layer.frame = rightLayerFrame
+            case PositionLayerName.rightOutsideLayer.rawValue:
+                layer.frame = rightOutsideLayerFrame
+            default:
+                break
+            }
+        }
+    }
+    
+    private func addingCoversToView(from images: [String]) {
         if images.count == 1 {
             let centerLayer = CALayer()
             centerLayer.frame = centerLayerFrame
@@ -221,7 +256,8 @@ class CoverFlowViewController: UIViewController {
             }
     }
     
-    private func prepeareImagesSize() {
+    private func prepeareCoverLayersSize() {
+        
         let coverSideSize: CGFloat = (view.frame.width / 3)
         
         leftOutsideLayerFrame = CGRect(x: -coverSideSize,

@@ -8,41 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E7961B19254732C0006FB2B3 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7961B18254732C0006FB2B3 /* ImageManager.swift */; };
-		E7961B1D254741AE006FB2B3 /* billieholiday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7961B1C254741AE006FB2B3 /* billieholiday.jpg */; };
-		E7961B1F25474283006FB2B3 /* bluesalley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7961B1E25474283006FB2B3 /* bluesalley.jpg */; };
-		E7961B21254742A3006FB2B3 /* fineandmellow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7961B20254742A3006FB2B3 /* fineandmellow.jpg */; };
-		E7961B2B254742EF006FB2B3 /* isayyeah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7961B22254742ED006FB2B3 /* isayyeah.jpg */; };
-		E7961B2C254742EF006FB2B3 /* milestones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7961B23254742ED006FB2B3 /* milestones.jpg */; };
-		E7961B2D254742EF006FB2B3 /* studyinbrown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7961B24254742EE006FB2B3 /* studyinbrown.jpg */; };
-		E7961B2E254742EF006FB2B3 /* iscream.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7961B25254742EE006FB2B3 /* iscream.jpg */; };
-		E7961B2F254742EF006FB2B3 /* scenesinthecity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7961B26254742EE006FB2B3 /* scenesinthecity.jpg */; };
-		E7961B30254742EF006FB2B3 /* jazzgiant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7961B27254742EE006FB2B3 /* jazzgiant.jpg */; };
-		E7961B31254742EF006FB2B3 /* thesidewinder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7961B28254742EF006FB2B3 /* thesidewinder.jpg */; };
-		E7961B32254742EF006FB2B3 /* musicforthejiltedgeneration.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7961B29254742EF006FB2B3 /* musicforthejiltedgeneration.jpg */; };
-		E7961B33254742EF006FB2B3 /* thewall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7961B2A254742EF006FB2B3 /* thewall.jpg */; };
+		E7961B4D2547711B006FB2B3 /* Covers in Resources */ = {isa = PBXBuildFile; fileRef = E7961B4C2547711B006FB2B3 /* Covers */; };
 		E7F77AA425442E6100591998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F77AA325442E6100591998 /* AppDelegate.swift */; };
 		E7F77AA625442E6100591998 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F77AA525442E6100591998 /* SceneDelegate.swift */; };
 		E7F77AA825442E6100591998 /* CoverFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F77AA725442E6100591998 /* CoverFlowViewController.swift */; };
 		E7F77AAB25442E6100591998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F77AA925442E6100591998 /* Main.storyboard */; };
 		E7F77AAD25442E6600591998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F77AAC25442E6600591998 /* Assets.xcassets */; };
 		E7F77AB025442E6600591998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F77AAE25442E6600591998 /* LaunchScreen.storyboard */; };
-		E7F77ABD25445DD700591998 /* acdc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7F77ABA25445DD700591998 /* acdc.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7961B18254732C0006FB2B3 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
-		E7961B1C254741AE006FB2B3 /* billieholiday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = billieholiday.jpg; sourceTree = "<group>"; };
-		E7961B1E25474283006FB2B3 /* bluesalley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bluesalley.jpg; sourceTree = "<group>"; };
-		E7961B20254742A3006FB2B3 /* fineandmellow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fineandmellow.jpg; sourceTree = "<group>"; };
-		E7961B22254742ED006FB2B3 /* isayyeah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = isayyeah.jpg; sourceTree = "<group>"; };
-		E7961B23254742ED006FB2B3 /* milestones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = milestones.jpg; sourceTree = "<group>"; };
-		E7961B24254742EE006FB2B3 /* studyinbrown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = studyinbrown.jpg; sourceTree = "<group>"; };
-		E7961B25254742EE006FB2B3 /* iscream.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iscream.jpg; sourceTree = "<group>"; };
-		E7961B26254742EE006FB2B3 /* scenesinthecity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scenesinthecity.jpg; sourceTree = "<group>"; };
-		E7961B27254742EE006FB2B3 /* jazzgiant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jazzgiant.jpg; sourceTree = "<group>"; };
-		E7961B28254742EF006FB2B3 /* thesidewinder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thesidewinder.jpg; sourceTree = "<group>"; };
-		E7961B29254742EF006FB2B3 /* musicforthejiltedgeneration.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = musicforthejiltedgeneration.jpg; sourceTree = "<group>"; };
-		E7961B2A254742EF006FB2B3 /* thewall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thewall.jpg; sourceTree = "<group>"; };
+		E7961B4C2547711B006FB2B3 /* Covers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Covers; sourceTree = "<group>"; };
 		E7F77AA025442E6100591998 /* CoverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F77AA325442E6100591998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7F77AA525442E6100591998 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +28,6 @@
 		E7F77AAC25442E6600591998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7F77AAF25442E6600591998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7F77AB125442E6600591998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7F77ABA25445DD700591998 /* acdc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = acdc.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +44,7 @@
 		E7961B342547471C006FB2B3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E7F77AB825445D9800591998 /* Covers */,
+				E7961B4C2547711B006FB2B3 /* Covers */,
 				E7F77AAC25442E6600591998 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -137,26 +113,6 @@
 			path = CoverFlow;
 			sourceTree = "<group>";
 		};
-		E7F77AB825445D9800591998 /* Covers */ = {
-			isa = PBXGroup;
-			children = (
-				E7F77ABA25445DD700591998 /* acdc.jpg */,
-				E7961B1C254741AE006FB2B3 /* billieholiday.jpg */,
-				E7961B1E25474283006FB2B3 /* bluesalley.jpg */,
-				E7961B20254742A3006FB2B3 /* fineandmellow.jpg */,
-				E7961B22254742ED006FB2B3 /* isayyeah.jpg */,
-				E7961B25254742EE006FB2B3 /* iscream.jpg */,
-				E7961B27254742EE006FB2B3 /* jazzgiant.jpg */,
-				E7961B23254742ED006FB2B3 /* milestones.jpg */,
-				E7961B29254742EF006FB2B3 /* musicforthejiltedgeneration.jpg */,
-				E7961B26254742EE006FB2B3 /* scenesinthecity.jpg */,
-				E7961B24254742EE006FB2B3 /* studyinbrown.jpg */,
-				E7961B28254742EF006FB2B3 /* thesidewinder.jpg */,
-				E7961B2A254742EF006FB2B3 /* thewall.jpg */,
-			);
-			path = Covers;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,22 +171,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7961B2B254742EF006FB2B3 /* isayyeah.jpg in Resources */,
 				E7F77AB025442E6600591998 /* LaunchScreen.storyboard in Resources */,
-				E7F77ABD25445DD700591998 /* acdc.jpg in Resources */,
-				E7961B2E254742EF006FB2B3 /* iscream.jpg in Resources */,
-				E7961B2D254742EF006FB2B3 /* studyinbrown.jpg in Resources */,
-				E7961B2C254742EF006FB2B3 /* milestones.jpg in Resources */,
+				E7961B4D2547711B006FB2B3 /* Covers in Resources */,
 				E7F77AAD25442E6600591998 /* Assets.xcassets in Resources */,
-				E7961B31254742EF006FB2B3 /* thesidewinder.jpg in Resources */,
-				E7961B1F25474283006FB2B3 /* bluesalley.jpg in Resources */,
-				E7961B2F254742EF006FB2B3 /* scenesinthecity.jpg in Resources */,
-				E7961B1D254741AE006FB2B3 /* billieholiday.jpg in Resources */,
-				E7961B33254742EF006FB2B3 /* thewall.jpg in Resources */,
 				E7F77AAB25442E6100591998 /* Main.storyboard in Resources */,
-				E7961B30254742EF006FB2B3 /* jazzgiant.jpg in Resources */,
-				E7961B21254742A3006FB2B3 /* fineandmellow.jpg in Resources */,
-				E7961B32254742EF006FB2B3 /* musicforthejiltedgeneration.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
